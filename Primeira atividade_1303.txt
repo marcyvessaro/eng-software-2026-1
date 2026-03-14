@@ -1,0 +1,13 @@
+algoritmo "soma"
+
+var
+  a,b,c: inteiro
+inicio
+ escreval("insira o valor")
+ leia(a)
+ escreval("escreva o segundo valor")
+ leia(b)
+ c<-a+b
+ escreval( "resultado é:",c)
+
+fimalgoritmo
