@@ -1,0 +1,25 @@
+#include<conio.h>
+#include<stdio.h>	
+#include<stdlib.h>
+#include<math.h>
+
+
+int main ()
+{
+	char mercadoria [50];
+	int quantidade, total;
+	float valor;
+	
+	
+	printf ("informe a mercadoria desejada: /n");
+	gets (mercadoria);
+	printf ("informe a quantidade /n");
+	scanf("%i", &quantidade);
+	printf ("informe o valor /n");
+	scanf ("f", &valor);	
+	
+	
+	total= quantidade*valor;
+	
+	printf ("o valor total eh %i", total);
+	}	
