@@ -1,0 +1,30 @@
+#include<stdio.h>
+#include<stdlib.h>
+#include<conio.h>
+#include<math.h>
+
+int main (){
+	int x,y,z;
+	
+	printf("insira o comprimento do primeiro lado do triangulo \n");
+	scanf("%i",&x);
+	printf("insira o comprimento do segundo lado \n");
+	scanf("%i",&y);
+	printf("insira o comprimento do terceiro lado \n");
+	scanf("%i",&z);
+	
+	if ((x<y+z)&&(y<x+z)&&(z<x+y)){
+		if ((y==x)&&(x==z)&&(z==y)){
+			printf("o triangulo eh equilatero \n");
+		}
+		else if ((y!=x)&&(x!=z)&&(z!=y)){
+			printf("o triangulo eh escaleno \n");
+		}
+		else{
+			printf("o triangulo eh isoceles");
+		}
+	}
+	else{
+		printf("nao eh triangulo");
+	}
+}
