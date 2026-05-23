@@ -1,0 +1,57 @@
+//incompleto
+
+#include<stdio.h>
+
+int main(){
+	
+	int vi,vf; //valor inicial, valor final
+	int sp=0, si=0;
+	int cp=0,ci=0; 
+	
+	printf("entre com o valor inicial \n");
+	scanf("%i",&vi);
+	printf("entre com o valor final \n");
+	scanf("%i",&vf);
+	
+	
+	
+	while(vi<=vf){
+		
+		
+		if (vi%2==0){
+			
+			sp=sp+vi; 
+				cp++; 
+			
+		}
+		else{
+			si=si+vf;
+			ci++;
+			
+	
+	}
+}
+	vi++;
+	
+		while(vivi){
+		
+		
+		if (vi%2==0){
+			
+			sp=sp+vi; 
+				cp++; 
+			
+		}
+		else{
+			si=si+vf;
+			ci++;
+			
+	
+	}
+	vi--;
+	
+		
+}
+printf("%i %i \n", sp,sp/cp); 
+printf("%i,%i \n", si,si/ci); 
+}
