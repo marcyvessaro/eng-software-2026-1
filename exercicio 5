@@ -1,10 +1,8 @@
-//incompleto
-
 #include<stdio.h>
 
 int main(){
 	
-	int vi,vf; //valor inicial, valor final
+	int vi,vf; 
 	int sp=0, si=0;
 	int cp=0,ci=0; 
 	
@@ -13,7 +11,7 @@ int main(){
 	printf("entre com o valor final \n");
 	scanf("%i",&vf);
 	
-	
+	if(vi<=vf){
 	
 	while(vi<=vf){
 		
@@ -21,37 +19,33 @@ int main(){
 		if (vi%2==0){
 			
 			sp=sp+vi; 
-				cp++; 
-			
+				cp++; 	
 		}
 		else{
-			si=si+vf;
+			si=si+vi;
 			ci++;
-			
-	
 	}
-}
 	vi++;
-	
-		while(vivi){
+}
+}
+  	else{
+	  	
+		while(vi>=vf){
 		
 		
 		if (vi%2==0){
 			
 			sp=sp+vi; 
-				cp++; 
-			
+				cp++; 	
 		}
 		else{
-			si=si+vf;
+			si=si+vi;
 			ci++;
-			
-	
 	}
 	vi--;
-	
-		
 }
-printf("%i %i \n", sp,sp/cp); 
-printf("%i,%i \n", si,si/ci); 
+}
+
+printf("soma de pares: %i, media: %i \n", sp,sp/cp);
+printf("soma de impares: %i, media: %i \n", si,si/ci);
 }
