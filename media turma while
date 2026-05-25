@@ -1,0 +1,40 @@
+#include<stdio.h>
+int main(){
+
+ float notabi, ntalta, ntbaixa, mediat,soma=0;
+ int contador=1;
+ 
+ while (contador<=5){
+ 	printf("informe uma media: \n");
+ 	scanf("%f", &notabi);
+ 
+ 	if (contador==1){
+ 		ntalta=notabi;
+ 		ntbaixa=notabi;
+ 		
+	 }
+	 
+	if (notabi>ntalta){
+		
+		ntalta=notabi;
+		
+	}
+	  if(notabi<ntbaixa){
+
+            ntbaixa=notabi;
+
+        }
+        
+    soma=soma+notabi;
+ 
+ 	contador++;
+
+ }
+ 
+ mediat=soma/5;
+ 
+printf("a nota mais alta eh: %.1f \n",ntalta);
+printf("a nota mais baixa eh: %.1f \n",ntbaixa);
+printf("a media da turma eh %.1f \n",mediat);
+ 
+}
