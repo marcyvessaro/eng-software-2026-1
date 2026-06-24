@@ -1,0 +1,80 @@
+#include<stdio.h>
+
+int main (){
+	
+int canal, c2=0, c4=0, c6=0, c7=0, c12=0, c0=0;
+int numtv=0, canalmaior=0;
+int contador=0;
+
+do{
+
+	printf("insira o canal ligado \n");
+	scanf("%i",&canal);
+	
+	if (canal==2){
+			c2++;
+		}
+		else if (canal==4){
+			c4++;
+		}
+		else if (canal==6){
+			c6++;
+		}
+		else if (canal==7){
+			c7++;
+		
+		}
+		else if (canal==12){
+			c12++;
+		}
+		else if (canal==0){
+			c0++;
+		}
+		else {
+		printf("esse canal nao existe \n");
+		}
+	
+	
+	contador++;
+	
+}
+	while(contador<=5);
+	
+	numtv = c2;
+	canalmaior = 2;
+
+	if (c4 > numtv)
+	{
+    numtv = c4;
+    canalmaior = 4;
+	}
+
+	if (c6 > numtv)
+	{
+    numtv = c6;
+    canalmaior = 6;
+	}
+
+	if (c7 > numtv)
+	{
+    numtv = c7;
+    canalmaior = 7;
+	}		
+
+	if (c12 > numtv)
+	{
+    numtv = c12;
+    canalmaior = 12;
+	}
+	
+	printf("\ncanal 2: %i tvs\n", c2);
+    printf("canal 4: %i tvs\n", c4);
+    printf("canal 6: %i tvs\n", c6);
+    printf("canal 7: %i tvs\n", c7);
+    printf("canal 12: %i tvs\n", c12);
+    printf("tvs desligadas: %i \n", c0);
+    
+    printf("canal com mais audiencia: %i \n", canalmaior);
+		
+	}
+	
