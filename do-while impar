@@ -1,0 +1,27 @@
+//3.Fazer um algoritmo que faça a soma de valores impares de 1 até 12 e logo
+após calcule a média dos valores somados.
+
+#include<stdio.h>
+
+int main (){
+	
+	int num=1,somaimpar=0, contaimpar=0, media;
+	
+	do{
+		if (num%2!=0){
+			printf("%i \n", num);
+			somaimpar=num+num;
+			contaimpar++;
+			
+		}
+		num++;
+		
+	
+	
+}while(num<13);
+
+media=somaimpar/contaimpar;
+
+printf("soma: %i \nmedia: %i", somaimpar, media );
+
+}
