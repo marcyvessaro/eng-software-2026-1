@@ -1,0 +1,76 @@
+#include<stdio.h>
+
+
+int main (){
+	
+  int maiorfem=0, maiormasc=0, olho, idade, idadeF=0, idadeM=0;
+  int mulher=0, homem=0;
+  float mulher18=0, homem20=0;
+  char sexo;
+  int contador=1;
+
+	do{	
+		
+		printf("qual sua idade? \n");
+		scanf("%i",&idade);
+		
+		if (idade!=-1){
+		
+		printf("insira seu sexo (F/M) \n");
+  		scanf (" %c", &sexo);
+  
+  		if (sexo=='f' || sexo=='F'){
+		printf("selecione a cor dos seus olhos: \n 1:azuis \n 2:verdes \n 3:castanhos \n 4:pretos \n");
+		scanf("%i",&olho);
+		printf("qual sua idade? \n");
+		scanf("%i",&idade);
+		
+  	}
+  		else if (sexo=='m' || sexo=='M'){
+  		printf("selecione a cor dos seus olhos: \n 1:azuis \n 2:verdes \n 3:castanhos \n 4:pretos \n");
+  		scanf("%i",&olho);
+  		printf("qual sua idade? \n");
+		scanf("%i",&idade);
+  	
+  	
+  	}
+  	else {
+		printf("invalido \n");
+	}
+}
+	
+	if (sexo=='f' || sexo=='F'){
+		mulher++;
+    	if (idade > maiorfem){
+        maiorfem = idade;
+        
+    	}
+	}
+		
+	if (sexo=='m' || sexo=='M'){
+		homem++;
+   	 if (idade > maiormasc){
+        maiormasc = idade;
+       
+    }
+}
+
+	if ((sexo=='f' || sexo=='F') && (idade>=18 && idade<=35) && (olho==2)){
+		mulher18++;
+	}
+	
+	if ((sexo=='m' || sexo=='M') && (idade>=20 && idade<=40) && (olho==2 || olho==4)){
+		homem20++;
+	}
+
+	
+	contador++;
+	
+} while (idade!=-1);
+
+    printf("maior idade entre mulheres  %i \n", maiorfem);
+		printf("maior idade entre homens %i \n", maiormasc);
+		printf("porcentagem das mulheres %.2f \n", mulher18*100/mulher);
+		printf("porcentagem dos homens %.2f \n",homem20*100/homem);
+		
+	}
