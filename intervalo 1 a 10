@@ -1,0 +1,31 @@
+
+// CODIGO PARA MULTIPLICAR CADA NUMERO DENTRO DE UM INTERVALO DE 1 A 10
+
+#include<stdio.h>
+
+int main(){
+	
+	int vi,vf;
+	int mult;
+	
+		printf("insira o valor incial \n");
+		scanf("%i", &vi);
+		printf("insira o valor final \n");
+		scanf("%i", &vf);
+		
+	
+	do{
+		mult=1;
+			do{ 
+			printf("%i x %i = %i \n", vi, mult, vi*mult);
+			mult++;
+			} while (mult<=10);
+		
+		vi++;
+		
+	
+	} while (vi<=vf);
+	
+	
+
+}
