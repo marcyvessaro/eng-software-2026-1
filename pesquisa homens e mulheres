@@ -22,16 +22,13 @@ int main (){
   		if (sexo=='f' || sexo=='F'){
 		printf("selecione a cor dos seus olhos: \n 1:azuis \n 2:verdes \n 3:castanhos \n 4:pretos \n");
 		scanf("%i",&olho);
-		printf("qual sua idade? \n");
-		scanf("%i",&idade);
+	
 		
   	}
   		else if (sexo=='m' || sexo=='M'){
   		printf("selecione a cor dos seus olhos: \n 1:azuis \n 2:verdes \n 3:castanhos \n 4:pretos \n");
   		scanf("%i",&olho);
-  		printf("qual sua idade? \n");
-		scanf("%i",&idade);
-  	
+  		
   	
   	}
   	else {
@@ -70,7 +67,10 @@ int main (){
 
     printf("maior idade entre mulheres  %i \n", maiorfem);
 		printf("maior idade entre homens %i \n", maiormasc);
-		printf("porcentagem das mulheres %.2f \n", mulher18*100/mulher);
-		printf("porcentagem dos homens %.2f \n",homem20*100/homem);
+
+		if (mulher18>0){
+		printf("porcentagem das mulheres %.2f \n", mulher18*100/mulher);}
+		if(homem20>0){
+		printf("porcentagem dos homens %.2f \n",homem20*100/homem);}
 		
 	}
